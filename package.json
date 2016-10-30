@@ -9,6 +9,7 @@
   "author": "gerome",
   "license": "ISC",
   "dependencies": {
+    "requirejs": "^2.3.2",
     "util": "^0.10.3"
   }
 }

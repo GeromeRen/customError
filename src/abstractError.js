@@ -1,3 +1,4 @@
+"use strict";
 var util = require('util');
 
 var _AbstractError = function (targetSetting, constr){
@@ -12,7 +13,7 @@ var _AbstractError = function (targetSetting, constr){
     this.isAppErr = true;
 
     Error.captureStackTrace(this, constr || this);
-}
+};
 
 util.inherits(AbstractError, Error);
 _AbstractError.prototype.name = 'Abstract Error';
