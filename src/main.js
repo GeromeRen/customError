@@ -20,7 +20,7 @@ function synchronizedSampleMethod(name){
             type: "CustomAppErr.BadRequest",
             message: "Name is not valid",
             detail: util.format("The argument name [%s] is not valid.", String(name)),
-            extendedInfo: util.inspect(arguments),
+            extra: util.inspect(arguments),
             rootCause: ex
         }));
     }
